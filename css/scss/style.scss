@@ -1,0 +1,7 @@
+@use 'reset';
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(9, 1fr);
+	margin: 0 10px;
+}
