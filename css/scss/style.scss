@@ -1,7 +1,38 @@
-@use 'reset';
+@import "reset";
+
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+}
 
 .container {
 	display: grid;
 	grid-template-columns: repeat(9, 1fr);
 	margin: 0 10px;
+	max-width: 100%;
+	height: 500px;
+	@media (min-width: 576px) {
+		background-color: orange;
+	}
+	@media (min-width: 768px) {
+		background-color: yellow;
+	}
+	@media (min-width: 992px) {
+		background-color: green;
+	}
+	@media (min-width: 1200px) {
+		background-color: violet;
+	}
+}
+
+h1 {
+	background-color: orange;
 }
