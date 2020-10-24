@@ -12,7 +12,7 @@ html {
 }
 
 * {
-	font-family: helvetica, courier, serif;
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 *,
 *:before,
@@ -30,9 +30,7 @@ body {
 	display: grid;
 	grid-gap: 10px;
 	grid-template-columns: repeat(12, 1fr);
-	margin: 0 10px;
 	max-width: 100%;
-	overflow: hidden;
 	@media (min-width: $sm) {
 		.container-sm {
 		}
@@ -49,6 +47,23 @@ body {
 		.container-xl {
 		}
 	}
+}
+
+.w-100 {
+	width: 100%;
+}
+
+// Grid width
+.full-width {
+	grid-column: 1 / -1;
+}
+
+.narrow-width {
+	grid-column: 2 / -2;
+}
+
+.very-narrow-width {
+	grid-column: 4 / -4;
 }
 
 h1,
@@ -88,4 +103,43 @@ h6 {
 
 p {
 	line-height: 1.2em;
+}
+
+.text-align-center {
+	text-align: center;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.justify-content-space-between {
+	justify-content: space-between;
+}
+
+.justify-content-space-around {
+	justify-content: space-around;
+}
+
+.justify-content-center {
+	justify-content: center;
+}
+.justify-content-baseline {
+	justify-content: baseline;
+}
+
+.align-items-flex-start {
+	align-items: flex-start;
+}
+
+.align-items-baseline {
+	align-items: baseline;
+}
+
+.align-items-center {
+	align-items: center;
 }
